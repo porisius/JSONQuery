@@ -70,7 +70,7 @@ void UJsonFieldData::PostRequest(const FString &url) {
 	FString outStr = ToString();
 
 	// Log the post data for the user (OPTIONAL)
-	UE_LOG(LogTemp, Warning, TEXT("Post data: %s"), *outStr);
+	// UE_LOG(LogTemp, Warning, TEXT("Post data: %s"), *outStr);
 
 	// Create the post request with the generated data
 	TSharedRef< IHttpRequest, ESPMode::ThreadSafe > HttpRequest = FHttpModule::Get().CreateRequest();
@@ -168,7 +168,7 @@ void UJsonFieldData::PostRequestWithFile(FString FilePath, const FString &Url) {
 	HttpRequest->OnProcessRequestComplete().BindUObject(this, &UJsonFieldData::OnReady);
 
 	// Log the post data for the user (OPTIONAL)
-	UE_LOG(LogTemp, Warning, TEXT("Post data: %s"), *JSONStr);
+	//UE_LOG(LogTemp, Warning, TEXT("Post data: %s"), *JSONStr);
 
 	AddToRoot();
 	// Execute the request
