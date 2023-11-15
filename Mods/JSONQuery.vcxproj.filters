@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\JSONQuery.uplugin" />
+    <Filter Include="Resources">
+      <UniqueIdentifier>{C3577238-D919-45EA-BBC1-61154F7E3DF5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\Resources\Icon128.png">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
